@@ -25,26 +25,26 @@ class CircleCollectionViewCell: UICollectionViewCell {
     }()
 
     override init(frame: CGRect) {
-        super.init(frame: frame)
+         super.init(frame: frame)
         contentView.addSubview(myImageView)
-        
+
     }
 
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+}
 
     override func layoutSubviews() {
         super.layoutSubviews()
         myImageView.frame = contentView.bounds
     }
 
-    public func configure(with name: String) {
-        myImageView.image = UIImage(named: name)
-    }
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        myImageView.image = nil
-    }
+public func configure(with name: String) {
+    myImageView.image = UIImage(named: name)
+}
+override func prepareForReuse() {
+    super.prepareForReuse()
+    myImageView.image = nil
+}
     
 }
