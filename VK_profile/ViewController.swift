@@ -18,7 +18,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     imageView.clipsToBounds = true
     imageView.contentMode = .scaleAspectFill
     imageView.layer.masksToBounds = true
-    imageView.layer.cornerRadius = 300
+    imageView.layer.cornerRadius = Metric.size300
 
     return imageView
     }()
@@ -30,7 +30,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //        let image = UIImage(named: Icons.avatarButtonIcon)
         avatarButton.setImage(image.image, for: .normal)
         avatarButton.layer.masksToBounds = true
-        avatarButton.layer.cornerRadius = 40
+        avatarButton.layer.cornerRadius = Metric.size40
 
         return avatarButton
     }()
@@ -40,7 +40,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let myNameLabel = UILabel()
 
         myNameLabel.text = Strings.myNameButtonText
-        myNameLabel.font = .systemFont(ofSize: 25)
+        myNameLabel.font = .systemFont(ofSize: Metric.size25)
         myNameLabel.textColor = Colors.whiteColor
         myNameLabel.adjustsFontSizeToFitWidth = true
 
@@ -482,46 +482,48 @@ extension ViewController {
 
     //Размеры
     enum Metric {
-        static let size40: CGFloat = 40
-        static let size20: CGFloat = 20
-        static let size15: CGFloat = 15
-        static let size13: CGFloat = 13
-        static let size10: CGFloat = 10
-        static let size12: CGFloat = 12
-        static let size16: CGFloat = 16
-        static let size14: CGFloat = 14
-        static let size50: CGFloat = 50
-        static let size0: CGFloat = 0
         static let size550: CGFloat = 550
-        static let size18: CGFloat = 18
+        static let size300: CGFloat = 300
+        static let size50: CGFloat = 50
+        static let size40: CGFloat = 40
+        static let size25: CGFloat = 25
+        static let size20: CGFloat = 20
         static let size19: CGFloat = 19
+        static let size18: CGFloat = 18
+        static let size16: CGFloat = 16
+        static let size15: CGFloat = 15
+        static let size14: CGFloat = 14
+        static let size13: CGFloat = 13
+        static let size12: CGFloat = 12
+        static let size10: CGFloat = 10
+        static let size0: CGFloat = 0
     }
 
     //Констрейнты
     enum Offsets {
-        static let constr15: CGFloat = 15
-        static let constr020: CGFloat = 0.20
-        static let constr1: CGFloat = 1
-        static let constr037: CGFloat = 0.37
-        static let constr006: CGFloat = 0.06
-        static let constr0: CGFloat = 0
-        static let constr033: CGFloat = 0.33
-        static let constr0157: CGFloat = 0.157
-        static let constr005: CGFloat = 0.05
-        static let constr20: CGFloat = 20
-        static let constrMinus15: CGFloat = -15
-        static let constr0098: CGFloat = 0.098
-        static let constr0045: CGFloat = 0.045
-        static let constrMinus20: CGFloat = -20
-        static let constr015: CGFloat = 0.15
-        static let constr10: CGFloat = 10
-        static let constr092: CGFloat = 0.92
-        static let constr05: CGFloat = 0.5
-        static let constr9: CGFloat = 9
         static let constr120: CGFloat = 120
         static let constr25: CGFloat = 25
+        static let constr20: CGFloat = 20
+        static let constr15: CGFloat = 15
+        static let constr10: CGFloat = 10
+        static let constr9: CGFloat = 9
         static let constr5: CGFloat = 5
+        static let constr1: CGFloat = 1
+        static let constrMinus15: CGFloat = -15
+        static let constrMinus20: CGFloat = -20
+        static let constr05: CGFloat = 0.5
         static let constr04: CGFloat = 0.4
+        static let constr0157: CGFloat = 0.157
+        static let constr0098: CGFloat = 0.098
+        static let constr0045: CGFloat = 0.045
+        static let constr092: CGFloat = 0.92
+        static let constr037: CGFloat = 0.37
+        static let constr033: CGFloat = 0.33
+        static let constr020: CGFloat = 0.20
+        static let constr015: CGFloat = 0.15
+        static let constr006: CGFloat = 0.06
+        static let constr005: CGFloat = 0.05
+        static let constr0: CGFloat = 0
     }
 
     //Иконки
